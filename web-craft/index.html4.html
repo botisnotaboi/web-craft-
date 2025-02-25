@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Request Website - WebCraft</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script type="module" src="form.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">WebCraft</div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/page2.html">Portfolio</a>
+          <a href="/page2.html">Services</a>
+          <a href="/page2.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+          <a href="#search"><i class="fas fa-search"></i></a>
+          <a href="#account"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form-page">
+      <div class="form-container">
+        <h1>Tell Us About Your Project</h1>
+        <form id="projectForm" action="/success.html">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="projectDescription">Project Description</label>
+            <textarea id="projectDescription" name="projectDescription" rows="6" placeholder="Tell us about your website idea, features you want, and any specific requirements..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="timeline">Preferred Timeline</label>
+            <select id="timeline" name="timeline" required>
+              <option value="">Select timeline...</option>
+              <option value="urgent">ASAP (1-2 days)</option>
+              <option value="normal">Normal (3-5 days)</option>
+              <option value="relaxed">No Rush (1-2 weeks)</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="submit-button">Submit Request</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>Connecting clients with professional web developers for affordable website solutions.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: croncorbi@gmail.com</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
